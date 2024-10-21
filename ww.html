@@ -1,0 +1,200 @@
+
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="hayder" name="hayder">
+    
+    <input text="hayder" value="mahmood">
+</form>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Test</title>
+    <style>
+        body {
+            background-color: lightblue; /* يمكنك اختيار أي لون */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Web houm
+    </h1>
+    <p> <a href="https://www.facebook.com/HAYDER.YASEEN19">HAYDER YASEEN MAHMOOD
+        <a href="https://www.instagram.com/7.inri/?__pwa=1">Visit instagram</a>
+    </a>
+    </p>    
+    <img src="hayder.jpg" alt="Sample Image">
+    <a href="hayderyasen23@gmail.com">Visit instagram</a>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Link Example</title>
+</head>
+<body>
+
+    
+    <!-- رابط البريد الإلكتروني -->
+    <p> <a href="mailto:hayderyasen23@gmail.com">Contact </a></p>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+</head>
+<body>
+    <h1>Hello11, World!</h1>
+
+    <button onclick="changeText()">Click me!</button>
+    <p id="text">This is some text.</p>
+
+    <script>
+        function changeText() {
+            document.getElementById("text").innerHTML = "You clicked the button!";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed PDF Example</title>
+</head>
+<body>
+
+    <h1>my lıve.</h1>
+    <embed src="my lıve.pdf" type="application/pdf" width="600" height="500">
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed PDF Example</title>
+</head>
+<body>
+
+    <h1>how will my death be</h1>
+    <embed src="how will my death be.pdf" type="application/pdf" width="600" height="500">
+
+</body>
+</html>
+
+
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif; /* اختر نوع الخط */
+    }
+</style>
+</style>
+      
+<style>
+  h1 {
+      color: rgb(215, 23, 36); /* تغيير لون النص الرئيسي */
+  }
+
+  p {
+      color: rgb(13, 203, 13); /* تغيير لون الفقرة */
+  }
+</style>
+<style>
+  body {
+      background-image: url('hhh.webp'); /* رابط الصورة */
+      background-size: calc(); /* تكييف الصورة لتغطي الخلفية بالكامل */
+  }
+</style>
+<style>
+  a {
+      color: white;
+      background-color: rgb(6, 44, 232);
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+  }
+
+  a:hover {
+      background-color: rgb(241, 5, 5); /* تغيير لون الخلفية عند تمرير المؤشر */
+  }
+</style>
+<style>
+img {
+  width: 300px;
+  height: auto;
+  border: 2px solid rgb(3, 232, 248); /* إضافة حدود */
+}
+
+p {
+  margin: 20px;
+  padding: 100px;
+  border: 1px solid rgba(224, 240, 243, 0); /* إضافة مسافة حول النص وحدود */
+}
+</style>
+<style>
+body {
+}
+</style>
+<style>
+h1 {
+text-shadow: 2px 2px 5px rgb(9, 246, 108); /* ظل النص */
+}
+
+img {
+box-shadow: 5px 5px 15px rgb(214, 233, 8); /* ظل للصورة */
+}
+</style>
+<style>
+h1 {
+margin-bottom: 60px; /* تباعد أسفل العنوان */
+}
+
+p {
+padding: 10px; /* مسافة داخلية في الفقرة */
+}
+
+
+
+
+on:
+  workflow_dispatch:
+jobs:
+  use_api:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: read
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api https://api.github.com/repos/octocat/Spoon-Knife/issues
